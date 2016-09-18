@@ -1,0 +1,133 @@
+.table{
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-row{
+	display: table-row;
+}
+
+.table-cell{
+	display: table-cell;
+	padding: 15px;
+	border-top:#ddd 1px solid;
+	border-bottom:#ddd 1px solid;
+	vertical-align: middle;
+}
+
+.title{
+	background:#eee;
+}
+
+.cross{
+	display: block;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cross-row{
+	display: block;
+	width: 100%;
+	border-top:#ddd 1px solid;
+}
+
+.cross-cell{
+	display: block;
+	width: calc( 100% - 30px);
+	padding: 15px;
+	border-top: 0;
+	vertical-align: top;
+}
+
+.cross-cell.title{
+	text-align: center;
+}
+
+
+.cross-row{
+	margin-bottom: 15px;
+}
+
+.search{
+	width: calc( 100% - 31px);
+	padding: 10px 15px;
+}
+
+.search-cell{
+	display: inline-block;
+	margin-right: 25px;
+	padding: 5px 0;
+}
+
+.buttonArea{
+	padding: 15px 0;
+	text-align:right;
+}
+
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media screen and (max-width: 767px) {
+	.table{
+		display: block;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	.table-row{
+		display: block;
+		width: 100%;
+		border-top:#ddd 1px solid;
+	}
+
+	.table-cell{
+		display: block;
+		width: calc( 100% - 30px);
+		padding: 15px;
+		border-top: 0;
+		vertical-align: top;
+	}
+
+	.table-row.title{
+		display: none;
+	}
+
+	.table1 .table-row{
+		margin-bottom: 15px;
+	}
+
+	.table1 .RWDshow{
+		width: 100%;
+		padding: 15px;
+		margin:-15px 0 15px -15px;
+		border-bottom:#ddd 1px solid;
+		background:#eee;
+	}
+
+	.search-row{
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+	
+}
+
+
+
+
+
+
+
