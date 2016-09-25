@@ -10,15 +10,20 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/',function(){
+    return view('demo');
+});
 
-//Route::get('/', 'HomeController');
-Route::get('/','IndexController@index');
-Route::get('/about','InfoController@about');
-Route::get('/product/cate/{cate}','ProductController@showCatePage');
-Route::resource('/product','ProductController');
-Route::resource('/news','NewsController');
-Route::get('/contact','InfoController@contact');
-Route::post('/message','InfoController@message');
+Route::group(['prefix' => 'demo'], function () {
+
+    Route::get('/','IndexController@index');
+    Route::get('/about','InfoController@about');
+    Route::get('/product/cate/{cate}','ProductController@showCatePage');
+    Route::resource('/product','ProductController');
+    Route::resource('/news','NewsController');
+    Route::get('/contact','InfoController@contact');
+    Route::post('/message','InfoController@message');
+});
 
 
 //backend
