@@ -21,16 +21,10 @@ Route::get('/contact','InfoController@contact');
 Route::post('/message','InfoController@message');
 
 
-Route::controllers([
-    'auth'=>'Auth\AuthController',
-    'password'=>'Auth\PasswordController'
-]);
-Route::auth();
-
 //backend
 Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function($router) {
 
-    Route::resource('/','InfoController@editInfo');
+    Route::get('/','InfoController@editInfo');
 
     Route::group(['prefix' => 'overview'], function () {
         Route::get('/','InfoController@editInfo');
@@ -61,3 +55,8 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'adm
 });
 
 
+Route::controllers([
+    'auth'=>'Auth\AuthController',
+    'password'=>'Auth\PasswordController'
+]);
+Route::auth();

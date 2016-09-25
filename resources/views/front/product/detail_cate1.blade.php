@@ -26,7 +26,7 @@
                 <h2>{{$product->eng_name}}</h2>
                 <div class="textArea">
                     <p>
-                        {!!$product->description  !!}
+                        {!!$product->description !!}
                     </p>
                 </div>
             </div>

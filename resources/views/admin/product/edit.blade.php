@@ -40,16 +40,6 @@
                                     <div class = "caption">
 
                                         <p>
-                                            @if($pic->main==1)
-                                                <span href = "#" class = "btn btn-default main">
-                                                    主要圖片
-                                                </span>
-                                            @else
-                                            <a href = "#" class = "btn btn-primary set-main" role = "button" picId="{{$pic->id}}">
-                                                設為主要圖片
-                                            </a>
-                                            @endif
-
                                             <a href = "#" class = "btn btn-danger delete-item" role = "button" picId="{{$pic->id}}">
                                                 刪除
                                             </a>
