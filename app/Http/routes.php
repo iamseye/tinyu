@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+//Route::get('/', 'HomeController');
+Route::get('/','IndexController@index');
+Route::get('/about','InfoController@about');
+Route::get('/product/cate/{cate}','ProductController@showCatePage');
+Route::resource('/product','ProductController');
+Route::resource('/news','NewsController');
+Route::get('/contact','InfoController@contact');
+Route::post('/message','InfoController@message');
 
 
 Route::controllers([
@@ -29,8 +36,6 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'adm
         Route::get('/','InfoController@editInfo');
         Route::get('/info','InfoController@editInfo');
         Route::patch('/info/update/{id}','InfoController@updateInfo');
-        Route::get('/indexInfo','InfoController@editIndexInfo');
-        Route::patch('/indexInfo/update/{id}','InfoController@updateIndexInfo');
         Route::get('/about','InfoController@editAboutUs');
         Route::patch('/about/update/{id}','InfoController@updateAboutUs');
         Route::get('/contact','InfoController@editContact');
@@ -38,14 +43,15 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'adm
 
     });
 
-    Route::resource('/tour','TourController');
-    Route::post('/tour/search','TourController@search');
-    Route::get('/tour/booking/{tour_id}','TourController@booking');
+    Route::resource('/product','ProductController');
+    Route::get('/product/cate/{cate}','ProductController@showCatePage');
+    Route::resource('/productPics','ProductPicsController');
+    Route::post('/productPics/update_main/{id}','ProductPicsController@update_main');
+    Route::delete('/carouselPicDel/{id}','ProductController@carouselDel');
+    Route::delete('/areaPicDel/{id}','ProductController@areaDel');
 
 
-    Route::resource('/booking','BookingController');
-    Route::post('/booking/search','BookingController@search');
-
+    Route::resource('/indexPics','IndexPicsController');
 
     Route::resource('/news','NewsController');
     Route::get('/news/cate/{cate}','NewsController@showCatePage');

@@ -17,13 +17,6 @@ class InfoController extends Controller
     //use comman function
     use MsgTrait;
     //
-    public function editIndexInfo()
-    {
-        $overview=Overview::all()->first();
-
-        return view('admin.overview.indexInfo',compact('overview'));
-
-    }
 
     public function editInfo()
     {

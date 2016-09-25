@@ -1,0 +1,299 @@
+#header{
+	background: rgba(0,0,0,0.5);
+}
+
+#mainMenu li{
+	color: #fff;
+}
+
+
+
+#bannerIndex{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: #222 25px solid;
+}
+
+.bannerIndexContent{
+	position: relative;
+}
+
+.bannerIndexContent img{
+	width: 100%;
+	margin:0px;
+}
+
+.bannerText{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	height: auto;
+	margin-top:-62.5px;
+	text-align: center;
+	color: #fff;
+}
+
+.bannerText h1{
+	text-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+
+.bannerText .textArea{
+	width: 50%;
+	margin:0 25%;
+}
+
+.textArea{
+	line-height: 25px;
+	font-size: 15px;
+	text-align: justify;
+	letter-spacing: 0.5px;
+}
+
+
+
+
+#indexChalet{
+	padding:75px 0;
+}
+
+.textArea{
+	position: relative;
+	width: 400px;
+	padding:75px 75px 150px;
+	background: rgba(0,0,0,0.75);
+	color: #fff;
+}
+
+#indexChalet.textLeft .textArea{
+	margin-right: 60%;
+	margin-left: 75px;
+}
+
+#indexChalet.textRight .textArea{
+	margin-left: 60%;
+	margin-right: 75px;
+}
+
+.btn{
+	display: inline-block;
+	padding:10px 25px;
+	background: rgba(255,255,255,0.75);
+	color: #333;
+	font-weight: 900px !important;
+	transition: .2s;
+}
+
+.textArea .btn{
+	position: absolute;
+	bottom: 75px;
+}
+
+#indexChalet.textLeft .textArea .btn{
+	right: 75px;
+}
+
+#indexChalet.textRight .textArea .btn{
+	left: 75px;
+}
+
+.btn:hover{
+	background: rgba(255,255,255,1);
+}
+
+
+
+
+
+
+#indexAbout{
+	padding: 75px 0 0;
+	text-align: center;
+	border-bottom:#aaa 1px solid;
+}
+
+#indexAbout p{
+	width: 80%;
+	margin:0 10%;
+	color: #666;
+	border-top:#333 1px solid;
+	padding-top: 10px;
+	text-align: justify;
+}
+
+#indexAbout img{
+	width: 80%;
+	margin:25px 10% 75px;
+}
+
+
+
+
+
+#newsTitle{
+	padding:15px 0;
+	background: #000;
+	color: #fff;
+}
+
+#newsTitle h2{
+	margin:0 !important;
+}
+
+#newsList{
+	width:80%;
+	padding:25px 10% 75px;
+	background:#333;
+	color: #fff;
+}
+
+#newsList li{
+	width: 100%;
+	padding:25px 0;
+	border-bottom: #888 1px solid;
+	overflow:hidden;
+}
+
+#newsList li .date{
+	float: left;
+	width: 150px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#newsList li .title{
+	float: left;
+	width: calc( 100% - 300px);
+	line-height: 30px;
+	margin:0 !important;
+	padding:0 15px;
+	font-size: 18px;
+	text-align: left;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	font-weight: 100;
+}
+
+#newsList li .btn{
+	float: right;
+}
+
+
+
+
+#back{
+	float: left;
+	display: block;
+	width: 100%;
+	padding:25px 0;
+	background: #222;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+.slick-next, .slick-prev{
+	position: absolute;
+	top:50%;
+	width:50px;
+	height: 50px;
+	margin-top: -25px;
+	transition:.1s;
+	border: 0;
+	font-size: 0;
+	opacity: .5;
+}
+
+.slick-next:hover, .slick-prev:hover{
+	opacity: 1;
+}
+
+.slick-next{
+	right:5%;
+	background:url("../images/next.png") center no-repeat;
+	background-size: contain;
+}
+
+.slick-prev{
+	left:5%;
+	background:url("../images/prev.png") center no-repeat;
+	background-size: contain;
+}
+
+
+
+
+
+@media screen and (min-width: 1200px){
+
+	.bannerIndexContent img{
+		width: 100%;
+		margin:-80px 0;
+	}
+
+}
+
+@media screen and (max-width: 979px) {
+	#indexChalet{
+		padding:0;
+	}
+
+	#indexChalet img{
+		width: 100%;
+	}
+
+	.textArea{
+		width: calc( 100% - 100px);
+		padding:50px 50px 120px;
+		background: rgba(0,0,0,1);
+		margin:0 !important;
+	}
+
+	.textArea .btn{
+		left:auto !important;
+		right: 50px !important;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	#newsList li{
+		padding: 15px 0;
+	}
+
+	#newsList li .date{
+		width: 100%;
+	}
+
+	#newsList li .title{
+		font-size: 15px;
+		width: 100%;
+		padding:0;
+	}
+
+	#newsList li .btn{
+		width: 100%;
+		padding:8px 0;
+		margin-top: 5px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+	
+}
+
+
+
+
+
+
+

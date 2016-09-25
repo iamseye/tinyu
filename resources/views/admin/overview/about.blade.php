@@ -22,12 +22,6 @@
                         {!! Form::textArea('about', null,['class'=>'mcetextarea']) !!}
                     </div>
                 </div>
-                <div class="table-row">
-                    <div class="table-cell title">團隊成員</div>
-                    <div class="table-cell">
-                        {!! Form::textArea('about_team_intro', null,['class'=>'mcetextarea']) !!}
-                    </div>
-                </div>
 
             </div>
             <div class="buttonArea">

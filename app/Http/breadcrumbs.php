@@ -59,7 +59,7 @@ Breadcrumbs::register('news', function($breadcrumbs)
 Breadcrumbs::register('note', function($breadcrumbs)
 {
     $breadcrumbs->parent('news');
-    $breadcrumbs->push('TC大紀事',url('admin/news/cate/note'));
+    $breadcrumbs->push('最新消息',url('admin/news/cate/note'));
 });
 
 // Index > News > note > edit
@@ -75,7 +75,7 @@ Breadcrumbs::register('note_edit', function($breadcrumbs)
 Breadcrumbs::register('taichung', function($breadcrumbs)
 {
     $breadcrumbs->parent('news');
-    $breadcrumbs->push('台中新聞',url('admin/news/cate/taichung'));
+    $breadcrumbs->push('優惠消息',url('admin/news/cate/taichung'));
 });
 
 // Index > News > taichung > edit
@@ -83,7 +83,7 @@ Breadcrumbs::register('taichung', function($breadcrumbs)
 Breadcrumbs::register('taichung_edit', function($breadcrumbs)
 {
     $breadcrumbs->parent('taichung');
-    $breadcrumbs->push('編輯消息');
+    $breadcrumbs->push('編輯優惠消息');
 });
 
 //----messages
@@ -104,43 +104,43 @@ Breadcrumbs::register('messages_detail', function($breadcrumbs)
     $breadcrumbs->push('留言內容');
 });
 
-//----tour
+//--proudct
 
-Breadcrumbs::register('tours', function($breadcrumbs)
+
+Breadcrumbs::register('product', function($breadcrumbs)
 {
     $breadcrumbs->parent('index');
-    $breadcrumbs->push('導覽管理', url('admin/tour'));
+    $breadcrumbs->push('作品管理', url('admin/product/cate/1'));
 });
 
-// Index > Tours > add
+// Index > proudct > 木屋
 
-Breadcrumbs::register('tours_add', function($breadcrumbs)
+Breadcrumbs::register('1', function($breadcrumbs)
 {
-    $breadcrumbs->parent('tours');
-    $breadcrumbs->push('新增導覽');
+    $breadcrumbs->parent('product');
+    $breadcrumbs->push('木屋');
 });
 
+// Index > proudct > 木屋
 
-// Index > Tours > add
-
-Breadcrumbs::register('tours_edit', function($breadcrumbs)
+Breadcrumbs::register('2', function($breadcrumbs)
 {
-    $breadcrumbs->parent('tours');
-    $breadcrumbs->push('編輯導覽');
+    $breadcrumbs->parent('product');
+    $breadcrumbs->push('材料');
 });
 
-//----booking
+// Index > proudct > 木屋
 
-Breadcrumbs::register('booking', function($breadcrumbs)
+Breadcrumbs::register('3', function($breadcrumbs)
 {
-    $breadcrumbs->parent('index');
-    $breadcrumbs->push('預約表單', url('admin/booking'));
+    $breadcrumbs->parent('product');
+    $breadcrumbs->push('家具');
 });
 
-// Index > booking > detail
+// Index > proudct > 木屋
 
-Breadcrumbs::register('booking_detail', function($breadcrumbs)
+Breadcrumbs::register('4', function($breadcrumbs)
 {
-    $breadcrumbs->parent('booking');
-    $breadcrumbs->push('編輯表單');
+    $breadcrumbs->parent('product');
+    $breadcrumbs->push('工程');
 });

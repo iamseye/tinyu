@@ -1,0 +1,449 @@
+body{
+	font-family: 'メイリオ',meiryo,'ヒラギノ角ゴ pro w3','hiragino kaku gothic pro','微軟正黑體',sans-serif;
+	/*font-family: Hoefler Text,Songti TC,serif;*/
+	font-size: 1em;
+	font-weight: 100 !important;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+
+
+*:focus {
+	outline:0 !important;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+
+
+
+
+
+.clear{
+	clear: both;
+}
+
+.shadow{
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+.blur{
+	position: fixed !important;
+	top:0;
+	left:0;
+	-webkit-filter:blur(10px) !important;
+	filter:blur(10px) !important;
+}
+
+
+.lazyLoad{
+	position: relative;
+	top:50px;
+	opacity: 0;
+	transition: .3s;
+}
+
+.lazyLoad.show{
+	top:0px;
+	opacity: 1;
+}
+
+.RWDshow{
+	display: none;
+}
+
+.wrapper{
+	width: 94%;
+	padding:0 3%;
+}
+
+
+
+
+
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+#header{
+	width: 100%;
+	padding-bottom:15px;
+	overflow: hidden;
+}
+
+#accountBox{
+	float: left;
+	text-align: right;
+	background:#eee;
+	margin-bottom: 15px;
+}
+
+#accountBox li{
+	display: inline-block;
+	font-size: 13px;
+	line-height: 25px;
+	margin-left: 15px;
+	color: #333;
+}
+
+#accountBox li:hover{
+	text-decoration: underline;
+}
+
+
+
+
+h1{
+	float: left;
+	font-size: 30px;
+	line-height: 45px;
+	color: #2d8397;
+}
+
+#logo{
+	float: left;
+	height: 45px;
+	margin-right: 15px;
+}
+
+
+#mainMenu{
+	float: right;
+}
+
+#mainMenu li{
+	display: inline-block;
+	margin-left: 15px;
+	color: #999;
+	line-height: 45px;
+	transition: .2s;
+}
+
+#mainMenu li.this, #mainMenu li:hover{
+	color: #000;
+}
+
+
+#mainMenu a{
+	color: #000;
+}
+
+
+
+
+
+#content{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#subMenuArea{
+	float: left;
+	width: 200px;
+	background:#eee;
+	margin-right: 25px;
+	padding: 25px 0 15px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#subMenu li{
+	line-height: 35px;
+	color: #666;
+	margin-bottom: 10px;
+	transition: .2s;
+}
+
+
+#subMenu a{
+	text-decoration: none;
+}
+
+#subMenu li.this, #subMenu li:hover{
+	background:#ddd;
+	color: #000;
+}
+
+#deatailArea{
+	float: left;
+	width: calc( 100% - 225px );
+	padding: 15px 0;
+}
+
+#deatailCorss{
+	float: left;
+	width: 100%;
+	padding: 15px 0;
+}
+
+
+#path{
+	width: 100%;
+	overflow: hidden;
+	border-bottom:#ddd 1px solid;
+	margin-bottom: 15px;
+}
+
+#path li{
+	float: left;
+	color: #333;
+}
+
+#path li:after{
+	content:'/';
+	margin:0 10px;
+}
+
+#path a:last-child li:after{
+	content:'';
+}
+
+
+
+
+#page{
+	width: 100%;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#page li{
+	display: inline-block;
+	margin: 0 5px;
+	padding: 6px 13px;
+	border:#aaa 1px solid;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#page li:hover{
+	background: #2d8397;
+	color: #fff;
+}
+
+#page a:last-child li{
+	border:0;
+	padding: 6px 0px;
+}
+
+#page a:last-child li:hover{
+	background: #fff;
+	color: #000;
+}
+
+
+
+#BgMenu{
+	position: fixed;
+	top:0;
+	left:-85%;
+	width:80%;
+	height:100%;
+	background: #222;
+	transition: .5s;
+	z-index: 9999;
+}
+
+#BgMenu li{
+	width: calc( 100% - 25px);
+	line-height:50px;
+	padding-right: 25px;
+	text-align: right;
+	border-bottom:#333 1px solid;
+	color: #fff;
+	font-size: 15px;
+}
+
+#BgMenu li.this{
+	color: #3f9aaf;
+}
+
+#BgMenu li:hover{
+	background: rgba(255,255,255,0.25);
+}
+
+#BgMenu a:hover{
+	text-decoration: none;
+}
+
+#openMenu{
+	display: none;
+	position: absolute;
+	top:50px;
+	right:5%;
+	width:30px;
+	height:5px;
+	background-size: contain;
+	cursor: pointer;
+	background: rgb(0, 0, 0);
+	border-radius: 1px;
+	border:#fff 10px solid;
+	z-index: 9999999;
+	transition: .3s;
+	margin-right: -7.5px;
+}
+
+#openMenuBefore{
+	position: absolute;
+	top:-10px;
+	left:0px;
+	height: 5px;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	transition: .3s;
+}
+
+#openMenuAfter{
+	position: absolute;
+	bottom:-10px;
+	left:0px;
+	height: 5px;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	transition: .3s;
+}
+
+.rotateBefore{
+	transform:rotate(45deg);
+	top:0px !important;
+}
+
+.rotateAfter{
+	transform:rotate(-45deg);
+	bottom:0px !important;
+}
+
+#closeMenu{
+	display: none;
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 99999999999;
+}
+
+
+
+
+
+#footer{
+	width: 100%;
+	text-align: center;
+	line-height: 35px;
+	font-size: 10px;
+	background:#2d8397;
+	color: #fff;
+}
+
+#copyright{
+	color: rgba(255,255,255,0.75);
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+	#subMenuArea{
+		width: 120px;
+	}
+
+	#deatailArea{
+		width: calc( 100% - 145px );
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.RWDshow{
+		display: block;
+	}
+
+
+	#logo{
+		display: none;
+	}
+
+	#header div.wrapper{
+		width: calc( 100% - 75px);
+		padding-right: 75px;
+	}
+
+	h1{
+		font-size: 22px;
+	}
+
+	#mainMenu li{
+		display: none;
+	}
+
+
+
+	#content{
+		position: relative;
+		padding-top: 55px;
+	}
+
+	#subMenuArea{
+		width: 100%;
+		margin-right: 0;
+		padding: 10px 0 0;
+	}
+
+	#deatailArea{
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	#path{
+		position: absolute;
+		top:20px;
+		width: 94%;
+	}
+
+
+
+
+
+
+	#openMenu{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+@media screen and (max-device-width: 480px) {
+	
+}
+
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 function page(){
 
-    $("#insideSelect li").click(function(){
-        var index = $("#insideSelect li").index(this),
-        	page = $(".page").eq(index);
+    $("#contactSelect li").click(function(){
+        var index = $("#contactSelect li").index(this),
+        	page = $(".contactContent").eq(index);
             
-        $(".page").css("display","none");
+        $(".contactContent").css("display","none");
         $(page).fadeIn(200);
     });
 

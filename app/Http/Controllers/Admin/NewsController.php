@@ -10,6 +10,7 @@ use App\Http\Traits\MsgTrait;
 use App\News;
 use App\Http\Requests\newsFormRequest;
 
+
 class NewsController extends Controller
 {
     use MsgTrait;
@@ -82,7 +83,6 @@ class NewsController extends Controller
             $news=News::where('category','note')->orderBy('created_at', 'desc')->paginate(10);
             $cate='note';
         }
-
         //taichung news
         else{
             $news=News::where('category','taichung')->orderBy('created_at', 'desc')->paginate(10);

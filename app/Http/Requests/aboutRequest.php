@@ -25,7 +25,6 @@ class aboutRequest extends Request
     {
         return [
             'about'=>'required',
-            'about_team_intro'=>'required'
         ];
     }
 }

@@ -27,26 +27,9 @@ $(document).ready(function(){
 
             $("#openMenuBefore").removeClass("rotateBefore");
             $("#openMenuAfter").removeClass("rotateAfter");
-            $("#openMenu").css("background","rgb(0, 0, 0)");
+            $("#openMenu").css("background","#000");
         }
 
     });
 
-});
-
-
-$(window).resize(function(){
-
-        var w = $("#wrapper").width();
-
-        if ( w > 768 ){
-            $("#closeMenu").hide();
-            $("#BgMenu").css("left","-90%");
-            $("#wrapper").removeClass("blur");
-
-            $("#openMenuBefore").removeClass("rotateBefore");
-            $("#openMenuAfter").removeClass("rotateAfter");
-            $("#openMenu").css("background","rgb(0, 0, 0)");
-        }
-        
 });
