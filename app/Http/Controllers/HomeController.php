@@ -18,4 +18,10 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
+
+    public function demo()
+    {
+        return view('demo');
+
+    }
 }
