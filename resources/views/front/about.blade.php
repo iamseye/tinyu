@@ -15,7 +15,7 @@
     <div class="wrapper">
         <div class="aboutText">
             <p>
-                {{$about}}
+                {!! $about!!}
             </p>
         </div>
     </div>

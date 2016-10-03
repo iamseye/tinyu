@@ -147,6 +147,29 @@ h1{
 	overflow: hidden;
 }
 
+#indexList{
+	width: 90%;
+	margin:25px 5%;
+	text-align: center;
+}
+
+#indexList li{
+	display: inline-block;
+	width: 12%;
+	margin:25px;
+	cursor: pointer;
+}
+
+#indexList li img{
+	width: 100%;
+	-webkit-filter:grayscale(1);
+	transition:.3s;
+}
+
+#indexList li:hover img{
+	-webkit-filter:grayscale(0);
+}
+
 #subMenuArea{
 	float: left;
 	width: 200px;
@@ -371,6 +394,14 @@ h1{
 		width: calc( 100% - 145px );
 	}
 
+	#indexList li{
+		float: left;
+		width: calc( 50% - 50px );
+		margin:25px;
+		cursor: pointer;
+	}
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -422,6 +453,12 @@ h1{
 	}
 
 
+	#indexList li{
+		float: left;
+		width: calc( 50% - 50px );
+		margin:25px;
+		cursor: pointer;
+	}
 
 
 

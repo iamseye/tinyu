@@ -24,31 +24,31 @@
     <div id="header">
         <a href="{{url('/')}}"><img id="logo" src="{{url('images/logo.png')}}"/></a>
         <ul id="mainMenu">
-            <a href="{{url('/about')}}"><li>
+            <a href="{{url('about')}}"><li>
                     <span class="en">About</span>
                     <span class="zh">關於庭宇</span>
                 </li></a>
-            <a href="{{url('/product/cate/1')}}"><li>
+            <a href="{{url('product/cate/1')}}"><li>
                     <span class="en">Chalet</span>
                     <span class="zh">行動木屋</span>
                 </li></a>
-            <a href="{{url('/product/cate/4')}}"><li>
+            <a href="{{url('product/cate/4')}}"><li>
                     <span class="en">Construction</span>
                     <span class="zh">工　　程</span>
                 </li></a>
-            <a href="{{url('/product/cate/3')}}"><li>
+            <a href="{{url('product/cate/3')}}"><li>
                     <span class="en">Furniture</span>
                     <span class="zh">木製家具</span>
                 </li></a>
-            <a href="{{url('/product/cate/2')}}"><li>
+            <a href="{{url('product/cate/2')}}"><li>
                     <span class="en">Material</span>
                     <span class="zh">材　　料</span>
                 </li></a>
-            <a href="{{url('/news')}}"><li>
+            <a href="{{url('news')}}"><li>
                     <span class="en">News</span>
                     <span class="zh">最新消息</span>
                 </li></a>
-            <a href="{{url('/contact')}}"><li>
+            <a href="{{url('contact')}}"><li>
                     <span class="en">Contact</span>
                     <span class="zh">聯絡我們</span>
                 </li></a>
@@ -70,31 +70,31 @@
 </div>
 
 <ul id="BgMenu">
-    <a href="./about.html"><li>
+    <a href="{{url('about')}}"><li>
             <span class="en">About</span>
             <span class="zh">關於庭宇</span>
         </li></a>
-    <a href="./chalet.html"><li>
+    <a href="{{url('product/cate/1')}}"><li>
             <span class="en">Chalet</span>
             <span class="zh">行動木屋</span>
         </li></a>
-    <a href="./cons.html"><li>
+    <a href="{{url('product/cate/4')}}"><li>
             <span class="en">Construction</span>
             <span class="zh">工　　程</span>
         </li></a>
-    <a href="./furn.html"><li>
+    <a href="{{url('product/cate/3')}}"><li>
             <span class="en">Furniture</span>
             <span class="zh">木製家具</span>
         </li></a>
-    <a href="./mate.html"><li>
+    <a href="{{url('product/cate/2')}}"><li>
             <span class="en">Material</span>
             <span class="zh">材　　料</span>
         </li></a>
-    <a href="./news.html"><li>
+    <a href="{{url('news')}}"><li>
             <span class="en">News</span>
             <span class="zh">最新消息</span>
         </li></a>
-    <a href="./contact.html"><li>
+    <a href="{{url('contact')}}"><li>
             <span class="en">Contact</span>
             <span class="zh">聯絡我們</span>
         </li></a>

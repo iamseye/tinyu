@@ -10,9 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/','HomeController@demo');
-
-Route::group(['prefix' => 'demo'], function () {
+//Route::get('/','HomeController@demo');
 
     Route::get('/','IndexController@index');
     Route::get('/about','InfoController@about');
@@ -21,7 +19,6 @@ Route::group(['prefix' => 'demo'], function () {
     Route::resource('/news','NewsController');
     Route::get('/contact','InfoController@contact');
     Route::post('/message','InfoController@message');
-});
 
 
 //backend
